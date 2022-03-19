@@ -1,13 +1,35 @@
 import React from 'react'
+import ApexCharts, {ApexOptions} from 'apexcharts'
 
-class Envio extends React.Component<any, any>{
+class Envio extends React.Component<any, any> {
+
+  componentDidMount() {
+    let options = {
+      series: [44, 55, 41, 17, 15],
+      chart: {
+        type: 'donut',
+      },
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }]
+    };
+
+    let chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  }
+
   render() {
     return (
       <div>
-        <div className="card">15,074</div>
-        <div>456</div>
-        <div>175</div>
-        <div>5000</div>
+        <div id='chart' />
       </div>
     )
   }
