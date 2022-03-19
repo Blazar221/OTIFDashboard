@@ -6,21 +6,10 @@ class MiniCard extends React.Component<any, any> {
   }
 
   render() {
-    return <div className='card card-custom card-flush'>
-      <div className='card-header'>
-        <h3 className='card-title'>{this.props.title}</h3>
-        <div className='card-toolbar'>
-          <button type='button' className='btn btn-sm btn-light'>
-            Action
-          </button>
-        </div>
-      </div>
-      <div className='card-body py-5'>
-        {this.props.content}
-      </div>
-      <div className='card-footer'>
-        Footer
-      </div>
+    return <div className='card card-custom card-flush mini-card'>
+      <button type='button' className='mini-button btn-lg btn-#fafafa'>
+        +
+      </button>
     </div>
   }
 }

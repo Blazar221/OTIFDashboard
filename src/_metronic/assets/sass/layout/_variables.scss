@@ -2,6 +2,12 @@
 // Layout Config
 //
 
+$otif-dark: #121212;
+$otif-purple: #4C38EE;
+$otif-blue: #35C9E0;
+$otif-red: #FF3D00;
+$otif-green: #4CAF50;
+
 // Root font Sizes
 $root-font-size:                                    13px; // Root font size for desktop mode
 $root-font-size-lg:                             	13px; // Root font size for tablet mode
@@ -72,6 +78,6 @@ $aside-config: (
 ) !default;
 
 // Footer
-$footer-config: (	
+$footer-config: (
 	bg-color: if(isDarkMode(), #1B1B28, $white),
 ) !default;

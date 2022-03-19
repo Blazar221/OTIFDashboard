@@ -6,9 +6,9 @@ class SmallCard extends React.Component<any, any> {
   }
 
   render() {
-    return <div className='card card-custom card-flush small-card'>
+    return <div className='card card-custom card-flush sm-card'>
       <div className='card-header'>
-        <div className='header-container'>
+        <div className='sm-card-header-container'>
           <h3 className='card-title'>{this.props.title}</h3>
           <div className='card-toolbar'>
             <button type='button' className='btn btn-sm btn-#fafafa'>
@@ -17,7 +17,7 @@ class SmallCard extends React.Component<any, any> {
           </div>
         </div>
       </div>
-      <div className='content-container'>
+      <div className='sm-card-content-container'>
         <div className='card-body py-5'>
           {this.props.content}
         </div>

@@ -3,25 +3,52 @@
 //
 $card-border-color: #F3F3F3;
 // Base
+$card-sm-height: 90px;
 
-.small-card{
-  height: 100px;
+.md-card {
+  width: 300px;
+}
+
+.sm-card {
+  height: $card-sm-height;
   width: 260px;
 }
-.header-container {
+
+.sm-card-header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-end;
   width: inherit;
 }
-.content-container {
+
+.sm-card-content-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   width: inherit;
 }
+
+.sm-card-footer {
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.mini-card {
+  height: $card-sm-height;
+}
+
+.mini-button{
+  @extend .btn;
+  font-size: 30px;
+  color: $otif-purple;
+}
+
+
+
 .card {
   @if ($card-border-enabled) {
     border: map-get($border-widths, 2) $card-border-style $card-border-color;
