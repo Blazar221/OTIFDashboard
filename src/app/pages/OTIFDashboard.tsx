@@ -2,9 +2,12 @@ import React from 'react'
 import SmallCard from '../modules/otif/SmallCard'
 import MiniCard from '../modules/otif/MiniCard'
 import MediumCard from '../modules/otif/MediumCard'
+import LargeCard from '../modules/otif/LargeCard'
 import HistorialTable from '../modules/otif/HistorialTable'
 import Envio from '../modules/otif/Envio'
 import Clientas from '../modules/otif/Clientas'
+import Enviar from '../modules/otif/Enviar'
+import Destinos from '../modules/otif/Destinos'
 
 export function OTIFDashboard() {
   return (
@@ -41,14 +44,10 @@ export function OTIFDashboard() {
         <MediumCard title='Envio Totales' content={<Envio />} />
       </div>
 
-      <div className='d-flex flex-row flex-column-auto h-200px w-1200px justify-content-evenly'>
-        <div className='d-flex flex-column flex-row-fluid w-800px bg-primary'>
-          <span className='text-white'>Envious</span>
-        </div>
+      <div className='d-flex flex-row flex-column-auto h-200px w-1200px justify-content-between'>
+        <LargeCard title='Enviar Anuales' content={<Enviar />} />
 
-        <div className='d-flex flex-column flex-row-fluid w-400px bg-primary'>
-          <span className='text-white'>Puntos Accumulados</span>
-        </div>
+        <MediumCard title='Destinos Frecuentes' content={<Destinos />} />
       </div>
     </div>
   )

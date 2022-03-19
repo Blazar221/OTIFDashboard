@@ -5,6 +5,10 @@ $card-border-color: #F3F3F3;
 // Base
 $card-sm-height: 90px;
 
+.lg-card {
+  width: 620px;
+}
+
 .inner-card-container {
   display: flex;
   flex-direction: row;
