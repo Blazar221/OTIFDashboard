@@ -364,7 +364,7 @@ $box-shadow-lg:               						0 1rem 2rem 1rem rgba($black, .1) !default;
 
 
 // Border settings
-$border-color:                                      $gray-200 !default;
+$border-color:                                      $gray-700 !default;
 $border-dashed-color:                               $gray-300 !default;  // Custom variable
 $border-width:                                      1px !default;
 
@@ -687,7 +687,7 @@ $card-border-radius:                				$border-radius !default;
 $card-header-py:                                    0.5rem !default; // Custom variable
 $card-header-height: 								70px !default; // Custom variable
 
-$card-border-enabled:                               false !default; // Custom variable
+$card-border-enabled:                               true !default; // Custom variable
 
 // Accordion
 $accordion-color:                                   $body-color !default;

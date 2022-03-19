@@ -1,31 +1,50 @@
 import React from 'react'
+import SmallCard from '../modules/otif/SmallCard'
+import MiniCard from '../modules/otif/MiniCard'
 
 export function OTIFDashboard() {
   return (
-    <div className="d-flex flex-row h-300px">
-      <div className="d-flex flex-column flex-row-auto w-200px">
-        <div className="d-flex flex-column-auto h-50px bg-primary">
-          <span className="text-white">Fixed Height</span>
+    <div className='d-flex flex-column flex-row-auto h-600px w-1200px'>
+      <div className='d-flex flex-row flex-column-auto h-100px w-1200px justify-content-evenly'>
+        <div className='d-flex flex-column flex-row-fluid w-320px'>
+          <SmallCard title='Envious' content='350,547' />
         </div>
 
-        <div className="d-flex flex-column-fluid bg-success flex-center">
-          <span className="text-white">Fluid Height</span>
+        <div className='d-flex flex-column flex-row-fluid w-320px'>
+          <SmallCard title='Puntos Accumulados' content='50,997' />
+        </div>
+
+        <div className='d-flex flex-column flex-row-fluid w-320px'>
+          <SmallCard title='Tempos Promedious' content='500,807' />
+        </div>
+
+        <div className='d-flex flex-column-auto flex-row-auto bg-primary'>
+          <MiniCard />
         </div>
       </div>
 
-      <div className="d-flex flex-column flex-row-fluid">
-        <div className="d-flex flex-column-auto h-70px bg-info flex-center">
-          <span className="text-white">Fixed Height</span>
+      <div className='d-flex flex-row flex-column-auto h-300px w-1200px justify-content-evenly'>
+        <div className='d-flex flex-column flex-row-fluid w-400px bg-primary'>
+          <span className='text-white'>Envious</span>
         </div>
 
-        <div className="d-flex flex-row flex-column-fluid">
-          <div className="d-flex flex-row-fluid bg-dark flex-center">
-            <span className="text-white">Fluid Width</span>
-          </div>
+        <div className='d-flex flex-column flex-row-fluid w-400px bg-primary'>
+          <span className='text-white'>Puntos Accumulados</span>
+        </div>
 
-          <div className="d-flex flex-row-auto w-200px bg-warning flex-center">
-            <span className="text-white">Fixed Width</span>
-          </div>
+        <div className='d-flex flex-column flex-row-fluid w-400px bg-primary'>
+          <span className='text-white'>Tempos Promedious</span>
+        </div>
+
+      </div>
+
+      <div className='d-flex flex-row flex-column-auto h-200px w-1200px justify-content-evenly'>
+        <div className='d-flex flex-column flex-row-fluid w-800px bg-primary'>
+          <span className='text-white'>Envious</span>
+        </div>
+
+        <div className='d-flex flex-column flex-row-fluid w-400px bg-primary'>
+          <span className='text-white'>Puntos Accumulados</span>
         </div>
       </div>
     </div>

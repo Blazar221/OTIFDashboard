@@ -1,14 +1,16 @@
 //
 // Card
 //
-
+$card-border-color: #F3F3F3;
 // Base
 .card {    
     @if ($card-border-enabled)  {
-        border: $card-border-width $card-border-style $card-border-color;
+        border: map-get($border-widths, 2) $card-border-style $card-border-color;
     } @else {
         border: 0;
-    }  
+    }
+
+    background-color: #fafafa;
     
     box-shadow: $card-box-shadow;  
 
