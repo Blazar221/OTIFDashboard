@@ -8,18 +8,22 @@ class SmallCard extends React.Component<any, any> {
   render() {
     return <div className='card card-custom card-flush small-card'>
       <div className='card-header'>
-        <h3 className='card-title'>{this.props.title}</h3>
-        <div className='card-toolbar'>
-          <button type='button' className='btn btn-sm btn-#fafafa'>
-            ...
-          </button>
+        <div className='header-container'>
+          <h3 className='card-title'>{this.props.title}</h3>
+          <div className='card-toolbar'>
+            <button type='button' className='btn btn-sm btn-#fafafa'>
+              ...
+            </button>
+          </div>
         </div>
       </div>
-      <div className='card-body py-5'>
-        {this.props.content}
-      </div>
-      <div className='card-footer'>
-        Footer
+      <div className='content-container'>
+        <div className='card-body py-5'>
+          {this.props.content}
+        </div>
+        <div className='card-footer'>
+          {this.props.footer}
+        </div>
       </div>
     </div>
   }

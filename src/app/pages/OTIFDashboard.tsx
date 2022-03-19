@@ -7,7 +7,9 @@ export function OTIFDashboard() {
     <div className='d-flex flex-column flex-row-auto h-600px w-1200px'>
       <div className='d-flex flex-row flex-column-auto h-100px w-1200px justify-content-evenly'>
         <div className='d-flex flex-column flex-row-fluid w-320px'>
-          <SmallCard title='Envious' content='350,547' />
+          <SmallCard title='Envious' content='350,547'
+                     footer={<div style={{width: '150px', display: 'flex'}}><p style={{fontSize: '1px'}}>Last 30 Days:</p><p style={{color: 'green'}}>↑3.16%</p>
+                     </div>} />
         </div>
 
         <div className='d-flex flex-column flex-row-fluid w-320px'>
