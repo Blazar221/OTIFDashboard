@@ -5,6 +5,26 @@ $card-border-color: #F3F3F3;
 // Base
 $card-sm-height: 90px;
 
+.inner-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.inner-card {
+  background-color: #FFFFFF;
+  width: 40%;
+  height: 100px;
+  border: map-get($border-widths, 2) $card-border-style $card-border-color;
+  border-radius: $border-radius;
+  margin-bottom: 18px;
+}
+
+.inner-card-content {
+  font-size: 30px;
+}
+
 .md-card {
   width: 300px;
 }
@@ -41,12 +61,11 @@ $card-sm-height: 90px;
   height: $card-sm-height;
 }
 
-.mini-button{
+.mini-button {
   @extend .btn;
   font-size: 30px;
   color: $otif-purple;
 }
-
 
 
 .card {

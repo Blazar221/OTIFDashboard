@@ -2,6 +2,9 @@ import React from 'react'
 import SmallCard from '../modules/otif/SmallCard'
 import MiniCard from '../modules/otif/MiniCard'
 import MediumCard from '../modules/otif/MediumCard'
+import HistorialTable from '../modules/otif/HistorialTable'
+import Envio from '../modules/otif/Envio'
+import Clientas from '../modules/otif/Clientas'
 
 export function OTIFDashboard() {
   return (
@@ -32,10 +35,10 @@ export function OTIFDashboard() {
         </div>
       </div>
 
-      <div className='d-flex flex-row flex-column-auto h-200px w-1200px justify-content-between align-content-between'>
-        <MediumCard title='Historial De Envios' />
-        <MediumCard title='Clientas' />
-        <MediumCard title='Envio Totales' />
+      <div className='d-flex flex-row flex-column-auto h-300px w-1200px justify-content-between align-content-between'>
+        <MediumCard title='Historial De Envios' content={<HistorialTable />} />
+        <MediumCard title='Clientas' content={<Clientas />} />
+        <MediumCard title='Envio Totales' content={<Envio />} />
       </div>
 
       <div className='d-flex flex-row flex-column-auto h-200px w-1200px justify-content-evenly'>
