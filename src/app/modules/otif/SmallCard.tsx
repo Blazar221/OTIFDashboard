@@ -6,12 +6,12 @@ class SmallCard extends React.Component<any, any> {
   }
 
   render() {
-    return <div className='card card-custom card-flush'>
+    return <div className='card card-custom card-flush small-card'>
       <div className='card-header'>
         <h3 className='card-title'>{this.props.title}</h3>
         <div className='card-toolbar'>
-          <button type='button' className='btn btn-sm btn-light'>
-            Action
+          <button type='button' className='btn btn-sm btn-#fafafa'>
+            ...
           </button>
         </div>
       </div>

@@ -18,7 +18,7 @@ export function OTIFDashboard() {
           <SmallCard title='Tempos Promedious' content='500,807' />
         </div>
 
-        <div className='d-flex flex-column-auto flex-row-auto bg-primary'>
+        <div className='d-flex flex-column-auto flex-row-auto'>
           <MiniCard />
         </div>
       </div>
