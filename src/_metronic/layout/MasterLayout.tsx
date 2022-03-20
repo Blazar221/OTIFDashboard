@@ -12,6 +12,8 @@ import {useLocation} from 'react-router-dom'
 import {DrawerMessenger, ActivityDrawer, Main, InviteUsers, UpgradePlan} from '../partials'
 import {MenuComponent} from '../assets/ts/components'
 
+import {OtifHeader} from '../../app/modules/otif/OtifHeader'
+
 const MasterLayout = () => {
   const location = useLocation()
   useEffect(() => {
@@ -31,8 +33,8 @@ const MasterLayout = () => {
       <div className='page d-flex flex-row flex-column-fluid'>
         <AsideDefault />
         <div className='wrapper d-flex flex-column flex-row-fluid' id='kt_wrapper'>
-          <HeaderWrapper />
-
+          {/*<HeaderWrapper />*/}
+          <OtifHeader />
           <div id='kt_content' className='content d-flex flex-column flex-column-fluid'>
             {/*<Toolbar />*/}
             <div className='post d-flex flex-column-fluid' id='kt_post'>
