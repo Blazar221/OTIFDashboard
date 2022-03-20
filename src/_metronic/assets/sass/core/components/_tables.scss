@@ -11,6 +11,49 @@
 
 }
 
+.ra-table {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  border: map-get($border-widths, 2) $card-border-style $card-border-color;
+  border-radius: 4px;
+
+  background-color: #fafafa;
+}
+
+.ra-header-container, .ra-header, .ra-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.ra-header {
+  background-color: $otif-purple;
+  color: white;
+  padding: 10px;
+
+  width: 90%;
+
+  p {
+    margin: 0;
+  }
+}
+
+.ra-line {
+  border: map-get($border-widths, 2) $card-border-style $card-border-color;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+
+  p {
+    margin: 0;
+    width: 12%;
+  }
+}
+
 .his-table td {
   width: 30px;
 }
