@@ -3,9 +3,21 @@
 //
 
 .btn-input {
-	background-color: $otif-purple;
+	background-color: #4a51a3;
 	color: white;
 	margin-left: 10px;
+}
+
+.btn-download {
+	border: map-get($border-widths, 2) $card-border-style $card-border-color;
+	border-radius: 4px;
+	padding: 10px;
+	background-color: white;
+	color: $gray-400;
+
+	margin-top: 20px;
+	margin-right: 1px;
+	margin-left: auto;
 }
 
 // Button
