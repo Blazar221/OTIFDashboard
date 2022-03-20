@@ -38,13 +38,13 @@ export function OTIFDashboard() {
         </div>
       </div>
 
-      <div className='d-flex flex-row flex-column-auto h-300px w-1200px justify-content-between align-content-between'>
+      <div className='d-flex flex-row flex-column-auto h-250px w-1200px justify-content-between align-content-between'>
         <MediumCard title='Historial De Envios' content={<HistorialTable />} />
         <MediumCard title='Clientas' content={<Clientas />} />
         <MediumCard title='Envio Totales' content={<Envio />} />
       </div>
 
-      <div className='d-flex flex-row flex-column-auto h-200px w-1200px justify-content-between'>
+      <div className='d-flex flex-row flex-column-auto h-250px w-1200px justify-content-between'>
         <LargeCard title='Enviar Anuales' content={<Enviar />} />
 
         <MediumCard title='Destinos Frecuentes' content={<Destinos />} />

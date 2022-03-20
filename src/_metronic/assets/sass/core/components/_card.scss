@@ -88,6 +88,10 @@ $card-sm-height: 90px;
   color: gray;
 }
 
+.area-chart-container {
+  height: 200px;
+}
+
 .card {
   @if ($card-border-enabled) {
     border: map-get($border-widths, 2) $card-border-style $card-border-color;
