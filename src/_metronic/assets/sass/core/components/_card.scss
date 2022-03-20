@@ -71,6 +71,22 @@ $card-sm-height: 90px;
   color: $otif-purple;
 }
 
+.donut-chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: inherit;
+}
+
+.donut-chart-title {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.donut-chart-sub {
+  margin-left: 20px;
+  color: gray;
+}
 
 .card {
   @if ($card-border-enabled) {

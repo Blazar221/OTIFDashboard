@@ -12,7 +12,7 @@ class MediumCard extends React.Component<any, any> {
           <h3 className='card-title'>{this.props.title}</h3>
         </div>
       </div>
-      <div>
+      <div style={{height: "90%"}}>
         {this.props.content}
       </div>
       <div className='card-footer'>
