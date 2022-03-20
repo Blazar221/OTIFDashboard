@@ -17,6 +17,7 @@ $card-sm-height: 90px;
 .lg-card:hover, .md-card:hover, .sm-card:hover, .mini-card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
+  border: map-get($border-widths, 2) $card-border-style transparent;
 }
 
 .inner-card-container {
@@ -33,10 +34,16 @@ $card-sm-height: 90px;
   border: map-get($border-widths, 2) $card-border-style $card-border-color;
   border-radius: $border-radius;
   margin-bottom: 18px;
+
+  padding: 10px 0 10px 10px;
 }
 
 .inner-card-content {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.inner-card-sub {
+  font-size: 12px;
 }
 
 .md-card {
