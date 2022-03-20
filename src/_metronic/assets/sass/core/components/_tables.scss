@@ -6,10 +6,31 @@
 $otif-table-color: #4a51a3;
 
 .his-table {
-  max-width: 200px;
-  font-size: 2px;
-  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
 
+}
+
+#his-header {
+  font-size: 3px;
+  color: $gray-400;
+  border-bottom: none;
+}
+
+.his-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+
+  margin: 2px 2px 10px;
+
+  border-bottom: map-get($border-widths, 1) $card-border-style $card-border-color;
+
+  p {
+    margin: 0;
+    width: 23%;
+  }
 }
 
 .ra-table {
@@ -31,13 +52,6 @@ $otif-table-color: #4a51a3;
   align-content: center;
 }
 
-.ra-header, .ra-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
-
 #ra-header {
   background-color: $otif-table-color;
   color: white;
@@ -45,6 +59,11 @@ $otif-table-color: #4a51a3;
 }
 
 .ra-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+
   border: map-get($border-widths, 2) $card-border-style $card-border-color;
   border-radius: 4px;
   margin: 10px;

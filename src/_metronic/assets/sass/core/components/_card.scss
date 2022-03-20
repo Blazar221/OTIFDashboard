@@ -5,8 +5,18 @@ $card-border-color: #F3F3F3;
 // Base
 $card-sm-height: 90px;
 
+.c-footer {
+
+}
+
 .lg-card {
   width: 620px;
+  margin-bottom: 20px;
+}
+
+.lg-card:hover, .md-card:hover, .sm-card:hover, .mini-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 
 .inner-card-container {
@@ -31,6 +41,7 @@ $card-sm-height: 90px;
 
 .md-card {
   width: 300px;
+  margin-bottom: 20px;
 }
 
 .sm-card {
