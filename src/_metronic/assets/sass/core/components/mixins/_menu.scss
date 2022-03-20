@@ -205,7 +205,10 @@
 	#{$sel}.menu-link.active {
 		transition: $transition-link;
 
-		@include menu-link-theme($title-color, $icon-color, $bullet-color, $arrow-color, $bg-color);
+		@include menu-link-theme(#4a51a3, $icon-color, $bullet-color, $arrow-color, #ffffff);
+
+		margin-right: 20px;
+		border-radius: 0 8px 8px 0;
 	}
 }
 

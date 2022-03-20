@@ -28,7 +28,7 @@ const AsideMenuItem: React.FC<Props> = ({
 
   return (
     <div className='menu-item'>
-      <Link className={clsx('menu-link without-sub', {active: isActive})} to={to}>
+      <Link className={clsx('menu-link without-sub otif-menu-link', {active: isActive})} to={to}>
         {hasBullet && (
           <span className='menu-bullet'>
             <span className='bullet bullet-dot'></span>

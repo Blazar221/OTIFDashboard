@@ -24,44 +24,9 @@ const AsideDefault: FC = () => {
       data-kt-drawer-toggle='#kt_aside_mobile_toggle'
     >
       {/* begin::Brand */}
-      <div className='aside-logo flex-column-auto' id='kt_aside_logo'>
+      <div>
         {/* begin::Logo */}
-        {aside.theme === 'dark' && (
-          <Link to='/dashboard'>
-            <img
-              alt='Logo'
-              className='h-25px logo'
-              src={toAbsoluteUrl('/media/logos/logo-1-dark.svg')}
-            />
-          </Link>
-        )}
-        {aside.theme === 'light' && (
-          <Link to='/dashboard'>
-            <img
-              alt='Logo'
-              className='h-25px logo'
-              src={toAbsoluteUrl('/media/logos/logo-1.svg')}
-            />
-          </Link>
-        )}
-        {/* end::Logo */}
-
-        {/* begin::Aside toggler */}
-        {aside.minimize && (
-          <div
-            id='kt_aside_toggle'
-            className='btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle'
-            data-kt-toggle='true'
-            data-kt-toggle-state='active'
-            data-kt-toggle-target='body'
-            data-kt-toggle-name='aside-minimize'
-          >
-            <KTSVG
-              path={'/media/icons/duotune/arrows/arr080.svg'}
-              className={'svg-icon-1 rotate-180'}
-            />
-          </div>
-        )}
+        <img src='./brand.png' style={{height: '130px', marginLeft: '20px'}}/>
         {/* end::Aside toggler */}
       </div>
       {/* end::Brand */}
