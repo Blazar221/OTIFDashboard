@@ -71,6 +71,40 @@ $card-sm-height: 90px;
   color: $otif-purple;
 }
 
+.progress-container {
+  margin-left: 12px;
+  margin-right: 12px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-content {
+  height: 80px;
+}
+
+
+.progress-title {
+  height: 12px;
+
+  p {
+    height: inherit;
+    margin: 0;
+  }
+}
+
+
+.progress-back {
+  margin-top: 10px;
+  background-color: #ececec;
+  border-radius: 15px;
+  height: 13px;
+}
+
+.progress-val {
+  border-radius: 15px;
+}
+
 .donut-chart-container {
   display: flex;
   flex-direction: column;
