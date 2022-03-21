@@ -1,3 +1,5 @@
-PetList
+OTIF Dashboard
 
-![Project Display](https://github.com/Blazar221/PetList/blob/main/public/readme.png)
+![Project Display1](https://github.com/Blazar221/OTIFDashboard/blob/main/display1.png)
+
+![Project Display2](https://github.com/Blazar221/OTIFDashboard/blob/main/display2.png)
