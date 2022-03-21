@@ -47,10 +47,10 @@ const MasterLayout = () => {
         </div>
       </div>
 
-      {/* begin:: Drawers */}
-      <ActivityDrawer />
-      <RightToolbar />
-      <DrawerMessenger />
+      {/*/!* begin:: Drawers *!/*/}
+      {/*<ActivityDrawer />*/}
+      {/*<RightToolbar />*/}
+      {/*<DrawerMessenger />*/}
       {/* end:: Drawers */}
 
       {/* begin:: Modals */}
