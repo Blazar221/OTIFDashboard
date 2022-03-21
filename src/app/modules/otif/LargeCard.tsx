@@ -15,8 +15,8 @@ class LargeCard extends React.Component<any, any> {
       <div>
         {this.props.content}
       </div>
-      <div className='card-footer'>
-        {this.props.footer}
+      <div className='c-footer'>
+        <p>...</p>
       </div>
     </div>
   }

@@ -5,19 +5,47 @@ $card-border-color: #F3F3F3;
 // Base
 $card-sm-height: 90px;
 
-.c-footer {
+.all-card-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.line-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.c-footer {
+  border-top: map-get($border-widths, 2) $card-border-style $card-border-color;
+  text-align: center;
+  color: #4f3bee;
+  font-size: 30px;
+  height: 12%;
+
+  p {
+    line-height: 12px;
+  }
 }
 
 .lg-card {
-  width: 620px;
+  width: 66%;
   margin-bottom: 20px;
+  height: 310px;
 }
 
 .lg-card:hover, .md-card:hover, .sm-card:hover, .mini-card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
   border: map-get($border-widths, 2) $card-border-style transparent;
+
+  .c-footer {
+    background-color: black;
+
+    p {
+      color: white;
+    }
+  }
 }
 
 .inner-card-container {
@@ -47,13 +75,14 @@ $card-sm-height: 90px;
 }
 
 .md-card {
-  width: 300px;
+  width: 32%;
   margin-bottom: 20px;
+  height: 310px;
 }
 
 .sm-card {
   height: $card-sm-height;
-  width: 260px;
+  width: 30%;
 }
 
 .sm-card-header-container {
@@ -69,7 +98,7 @@ $card-sm-height: 90px;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: inherit;
+  width: 100%;
 }
 
 .sm-card-footer {
@@ -98,7 +127,7 @@ $card-sm-height: 90px;
 }
 
 .progress-content {
-  height: 80px;
+  max-height: 50px;
 }
 
 
@@ -127,7 +156,6 @@ $card-sm-height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: inherit;
 }
 
 .donut-chart-title {
@@ -141,7 +169,7 @@ $card-sm-height: 90px;
 }
 
 .area-chart-container {
-  height: 200px;
+  height: 75%;
 }
 
 .card {
@@ -152,6 +180,8 @@ $card-sm-height: 90px;
   }
 
   background-color: #fafafa;
+
+  overflow: hidden;
 
   box-shadow: $card-box-shadow;
   position: relative;

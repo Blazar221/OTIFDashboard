@@ -7,7 +7,7 @@ function OtifHeader() {
   const {pageTitle} = usePageData()
   return (
     <div style={{padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>
-      <div style={{fontSize: '35px', marginRight: 'auto', textAlign: 'start'}}>
+      <div style={{fontSize: '35px', marginRight: 'auto', textAlign: 'start', paddingLeft: '20px'}}>
         {pageTitle}
       </div>
       <div style={{background: '#fafafa', borderRadius: '8px', overflow: 'hidden', padding: '10px', margin: '0 5px 0 5px'}}>

@@ -17,7 +17,7 @@ class Enviar extends React.Component<any, any> {
         show: false,
       },
       chart: {
-        height: 200,
+        height: 230,
         type: 'area',
         toolbar: {
           show: false,

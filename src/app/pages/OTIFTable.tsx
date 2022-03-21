@@ -21,6 +21,8 @@ export class OTIFTable extends React.Component<any, any> {
       ['00986455', 'OC00995', 'Monterrey', 'Oaxaca', 'Redpack', '11/03/2022', '12/03/2022', 'Entregado', '1'],
     ]
 
+    const sortIcon = <img style={{height: '22px'}} src='sort.png' />
+    const filterIcon = <img style={{height: '22px'}} src='filter.png' />
     return <>
       <PageTitle>{'RASTREO'}</PageTitle>
       <div>
@@ -40,14 +42,15 @@ export class OTIFTable extends React.Component<any, any> {
         </div>
         <div className='ra-table'>
           <div className='ra-line' id='ra-header'>
-            <p style={{width: '17%'}}>No. of Referencia</p>
-            <p>No. of Rastreo</p>
+            <p style={{width: '17%'}}>No. of Referencia{sortIcon}</p>
+            <p>No. of Rastreo{sortIcon}</p>
             <p style={{width: '12%'}}>Origen</p>
             <p>Destino</p>
             <p>Paqueteria</p>
-            <p style={{width: '18%'}}>Fecha Recoleccion</p>
-            <p style={{width: '18%'}}>Fecha De Entrega</p>
-            <p style={{width: '18%'}}>Estatus</p>
+            <p style={{width: '18%'}}>Fecha Recoleccion{sortIcon}</p>
+            <p style={{width: '18%'}}>Fecha De Entrega{sortIcon}</p>
+            <p style={{width: '18%'}}>Estatus{sortIcon}</p>
+            {filterIcon}
           </div>
           <div>
             {data.map((item, i) => {

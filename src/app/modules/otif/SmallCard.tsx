@@ -11,7 +11,7 @@ class SmallCard extends React.Component<any, any> {
         <div className='sm-card-header-container'>
           <h3 className='card-title'>{this.props.title}</h3>
           <div className='card-toolbar'>
-            <button type='button' className='btn btn-sm btn-#fafafa'>
+            <button type='button' className='btn btn-sm btn-#fafafa' style={{fontSize: '20px'}}>
               ...
             </button>
           </div>

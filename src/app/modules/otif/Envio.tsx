@@ -10,6 +10,8 @@ class Envio extends React.Component<any, any> {
       labels: ['Aire Envio', 'Bote Envio', 'Camion Envio'],
       chart: {
         type: 'donut',
+        height: '300px',
+        width: '300px',
       },
       dataLabels: {
         enabled: false,

@@ -14,41 +14,30 @@ export function OTIFDashboard() {
   return (
     <>
       <PageTitle>{'COTIZAR ENVIO'}</PageTitle>
-      <div className='d-flex flex-column flex-row-auto h-700px w-1200px'>
-        <div className='d-flex flex-row flex-column-auto h-100px w-1200px justify-content-evenly'>
-          <div className='d-flex flex-column flex-row-fluid w-320px'>
-            <SmallCard title='Envious' content='350,547'
-                       footer={<div className='sm-card-footer'><p style={{fontSize: '1px'}}>Last 30
-                         Days:</p><p style={{color: 'green'}}>↑3.16%</p>
-                       </div>} />
-          </div>
-
-          <div className='d-flex flex-column flex-row-fluid w-320px'>
-            <SmallCard title='Puntos Accumulados' content='50,997'
-                       footer={<div className='sm-card-footer'><p style={{color: 'red'}}>↓4.36%</p>
-                       </div>} />
-          </div>
-
-          <div className='d-flex flex-column flex-row-fluid w-320px'>
-            <SmallCard title='Tempos Promedious' content='500,807'
-                       footer={<div className='sm-card-footer'><p style={{fontSize: '1px'}}>Yesterday:</p><p
-                         style={{color: 'green'}}>↑4.36%</p>
-                       </div>} />
-          </div>
-
-          <div className='d-flex flex-column-auto flex-row-auto'>
-            <MiniCard />
-          </div>
+      <div className='all-card-container'>
+        <div className='line-container'>
+          <SmallCard title='Envious' content='350,547'
+                     footer={<div className='sm-card-footer'><p style={{fontSize: '1px'}}>Last 30
+                       Days:</p><p style={{color: 'green'}}>↑3.16%</p>
+                     </div>} />
+          <SmallCard title='Puntos Accumulados' content='50,997'
+                     footer={<div className='sm-card-footer'><p style={{color: 'red'}}>↓4.36%</p>
+                     </div>} />
+          <SmallCard title='Tempos Promedious' content='500,807'
+                     footer={<div className='sm-card-footer'><p style={{fontSize: '1px'}}>Yesterday:</p><p
+                       style={{color: 'green'}}>↑4.36%</p>
+                     </div>} />
+          <MiniCard />
         </div>
 
         <div
-          className='d-flex flex-row flex-column-auto h-300px w-1200px justify-content-between align-content-between'>
+          className='line-container'>
           <MediumCard title='Historial De Envios' content={<HistorialTable />} />
           <MediumCard title='Clientas' content={<Clientas />} />
           <MediumCard title='Envio Totales' content={<Envio />} />
         </div>
 
-        <div className='d-flex flex-row flex-column-auto h-300px w-1200px justify-content-between'>
+        <div className='line-container'>
           <LargeCard title='Enviar Anuales' content={<Enviar />} />
 
           <MediumCard title='Destinos Frecuentes' content={<Destinos />} />
